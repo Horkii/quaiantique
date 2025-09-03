@@ -1,4 +1,4 @@
-@import url("node_modules/bootstrap-icons/font/bootstrap-icons.css");
+@import 'bootstrap-icons/font/bootstrap-icons.css';
 @import 'custom';
 
 html{
@@ -14,7 +14,7 @@ footer.footer{
 }
 
 main{
-margin-bottom: 250px;
+margin-bottom: 270px;
 }
 
 p{
@@ -57,7 +57,7 @@ p{
  
     position: relative;
     &:hover{
-        .titre-image{
+        .titre-image,.action-image-buttons{
             opacity: 1;
         }
         img{
@@ -77,6 +77,18 @@ p{
         opacity: 0;
            transition: all 0.3s;
     }
+
+    .action-image-buttons{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        opacity: 0;
+        transition: all 0.3s;
+    }
 }
 
 .image-fixed{
@@ -85,6 +97,6 @@ p{
     object-fit: cover;
 }
 
-.form-labal{
+.form-label{
     color: $primary;
 }
