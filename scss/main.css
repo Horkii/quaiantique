@@ -12003,6 +12003,7 @@ p {
 
 .hero-scene {
   position: relative;
+  margin-bottom: 15px;
 }
 .hero-scene::before {
   content: "";
@@ -12056,4 +12057,8 @@ p {
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.form-labal {
+  color: #906427;
 }/*# sourceMappingURL=main.css.map */
