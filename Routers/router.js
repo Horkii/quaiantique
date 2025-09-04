@@ -44,6 +44,9 @@ document.getElementById("main-page").innerHTML = html;
 
   // Changement du titre de la page
   document.title = actualRoute.title + " - " + websiteName;
+
+  // afficher et masquer les éléments en fonction du rôle
+  showAndHideElementsForRole();
 };
 
 // Fonction pour gérer les événements de routage (clic sur les liens)
