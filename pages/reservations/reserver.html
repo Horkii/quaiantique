@@ -9,13 +9,19 @@
   <form>
 
     <div class="mb-3">
-      <label for="NomInput" class="form-label">Nom</label>
-      <input type="text" class="form-control" id="NomInput"  placeholder="Votre nom" value="">
+      <label for="NomInputResa" class="form-label">Nom</label>
+      <input type="text" class="form-control" id="NomInputResa"  placeholder="Votre nom" value="">
+      <div class="invalid-feedback">
+        Le nom est requis.
+      </div>
     </div>
 
     <div class="mb-3">
-      <label for="PrenomInput" class="form-label">Prénom</label>
-      <input type="text" class="form-control" id="PrenomInput"  placeholder="Votre prénom" value="">
+      <label for="PrenomInputResa" class="form-label">Prénom</label>
+      <input type="text" class="form-control" id="PrenomInputResa"  placeholder="Votre prénom" value="">
+      <div class="invalid-feedback">
+        Le prénom est requis.
+      </div>
     </div>
 
     <div class="mb-3">
@@ -26,6 +32,9 @@
     <div class="mb-3">
       <label for="NbConvivesInput" class="form-label">Nombre de convives habituel</label>
       <input type="number" class="form-control" id="NbConvivesInput" placeholder="Combien vous êtes habituellement ?" value="">
+      <div class="invalid-feedback">
+        Le nombre de convives est requis.
+      </div>
     </div>
     
     <div class="mb-3">
@@ -57,10 +66,13 @@
             <option >20:45</option>
             <option >21:00</option>
         </select>
+        <div class="invalid-feedback">
+        Un horaire est requis.
+      </div>
     </div>
     
     <div class="text-center">  
-      <button type="submit" class="btn btn-primary">Réserver</button>
+      <button type="submit" class="btn btn-primary" id="btn-validation-inscription">Réserver</button>
       <button type="button" class="btn btn-danger">Annuler</button>
     </div>
 
